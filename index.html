@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <!--/vite.svg está dentro de public. tudo o que fica na pasta public pode ser referênciado  
+    assim como se estivesse na pasta raiz, por se tratar de um pasta pública. Caso não mude quando trocar um arquivo dentro dessa pasta, no navegador, 
+    dê o comando: Ctrl+F5, isso irá atualizar o cache da página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shorts Summary</title>
+  </head>
+  <body>
+    <div id="app">
+      <img src="/logo.svg" alt="Logo" />
+      <h1>Shorts Summary</h1>
+
+      <form id="form">
+        <input type="url" id="url" placeholder="URL do vídeo" />
+        <button title="Resumir">
+          <i class="ph ph-play"></i>
+          <!--Vá em https://phosphoricons.com, procure por "play", na aba web, copie e cole, depois vá em get started, isso levará a
+          https://github.com/phosphor-icons/homepage#phosphor-icons, lá, procure por <script src="https://unpkg.com/@phosphor-icons/web"></script>-->
+        </button>
+      </form>
+
+      <h2>Resumo</h2>
+      <p id="content" class="placeholder">Escolha um short para resumir</p>
+    </div>
+    <script type="module" src="web/main.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </body>
+</html>

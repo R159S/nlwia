@@ -1,0 +1,29 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app > h1 {
+  /*esse sinal de maior irá garantir que só elementos dentro do elemento com o idetificador "#app" será selecionado, 
+  se houver outro elemento do mesmo tipo em outro lugar, esse será desprezado*/
+  color: #996dff;
+  margin-top: -5px;
+}
+
+#app > h2 {
+  align-self: flex-start;
+  margin-top: 64px;
+}
+
+#app > p {
+  align-self: flex-start;
+  text-align: justify;
+  width: 512px;
+  margin-top: -5px;
+}
+
+#app .placeholder {
+  color: #7c7c8a;
+  user-select: none; /*não permite selecionar o texto*/
+}
